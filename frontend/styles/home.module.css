@@ -1,0 +1,73 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #3aada3;
+  background-image: linear-gradient(
+      109.6deg,
+      rgba(5, 84, 94, 0.8) 16%,
+      rgba(5, 84, 94, 0.8) 16%
+    ),
+    url("/bg2.jpeg");
+
+  background-size: cover;
+}
+
+.formContainer {
+  width: 400px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 5, 0.3);
+
+  /* min-width: 150px; */
+}
+
+.form {
+  background-color: #f4f4f4;
+  padding: 40px 50px 30px 40px;
+  border-radius: 0px 0px 5px 5px;
+}
+.formText {
+  background-color: #3aada3;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.intro {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.buttonWrapper {
+  display: grid;
+  place-items: center;
+}
+.input {
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+.button {
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: #3aada3;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #3aada3;
+  transform: translateY(10px);
+}
+
+.button:active {
+  background-color: #3aada3;
+}
+
+.button:focus {
+  background-color: #3aada3;
+}
