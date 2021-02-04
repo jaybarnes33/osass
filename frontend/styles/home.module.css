@@ -5,53 +5,77 @@
   background-color: #3aada3;
   background-image: linear-gradient(
       109.6deg,
-      rgba(5, 84, 94, 0.8) 16%,
-      rgba(5, 84, 94, 0.8) 16%
+      rgba(5, 84, 94, 0.9) 16%,
+      rgba(5, 84, 94, 0.9) 16%
     ),
-    url("/bg2.jpeg");
-
+    url("/umat.jpeg");
+  font-family: "Montserrat", sans-serif;
   background-size: cover;
+  background-position: center;
+  padding: 30px 10px;
 }
 
 .formContainer {
-  width: 400px;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 5, 0.3);
+  width: 450px;
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: 0 0px 10px 0 rgba(0.5, 0.5, 0.5, 0.5);
 
   /* min-width: 150px; */
 }
 
 .form {
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   padding: 40px 50px 30px 40px;
   border-radius: 0px 0px 5px 5px;
 }
+
+.formContainer:hover {
+  transform: scale(1.05);
+}
 .formText {
   background-color: #3aada3;
-  padding: 10px;
-  color: white;
+  padding: 15px;
+  color: #f4f4f4;
   text-align: center;
   border-radius: 5px 5px 0px 0px;
+  font-weight: 100;
 }
 
 .intro {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
+  margin-bottom: 3px;
+  letter-spacing: 0.4rem;
 }
 
 .buttonWrapper {
+  margin-top: 30px;
   display: grid;
   place-items: center;
 }
 .input {
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
-  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 5px 0;
+  border: none;
 }
 
+.forgot {
+  font-weight: 500;
+  color: #3aada3;
+  text-decoration: none;
+  line-height: 1.2rem;
+}
+
+.forgot:hover {
+  font-weight: 500;
+  color: #3aada3;
+}
 .button {
-  padding: 8px 30px;
+  padding: 10px 35px;
   border-radius: 20px;
   background-color: #3aada3;
   text-transform: uppercase;
@@ -61,7 +85,7 @@
 
 .button:hover {
   background-color: #3aada3;
-  transform: translateY(10px);
+  transform: translateY(-10px);
 }
 
 .button:active {
@@ -70,4 +94,14 @@
 
 .button:focus {
   background-color: #3aada3;
+}
+
+.small {
+  text-align: center !important;
+}
+
+@media screen and (max-width: 500px) {
+  .formContainer {
+    width: 300px;
+  }
 }
